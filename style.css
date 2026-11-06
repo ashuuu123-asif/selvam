@@ -1,0 +1,199 @@
+```css
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #100b1c;
+    color: #f5efff;
+}
+
+/* Navigation Bar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #090612;
+    border-bottom: 1px solid #39205e;
+}
+
+.logo {
+    color: #c084fc;
+    font-size: 28px;
+}
+
+nav a {
+    color: #f5efff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c084fc;
+}
+
+/* Home Section */
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 40px;
+    background: linear-gradient(135deg, #100b1c, #211038);
+}
+
+.home-content {
+    max-width: 550px;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #d8b4fe;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 span,
+.about h1 span {
+    color: #c084fc;
+}
+
+.home-content h2 {
+    color: #a855f7;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #d6c8e8;
+}
+
+/* Buttons */
+
+button {
+    padding: 13px 25px;
+    background: linear-gradient(45deg, #9333ea, #c084fc);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f5efff;
+    color: #6b21a8;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #a855f7;
+}
+
+/* Profile Picture */
+
+.profile img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #c084fc;
+    box-shadow: 0 0 30px #9333ea;
+}
+
+/* About Section */
+
+.about {
+    padding: 80px 15%;
+    text-align: center;
+    background: #1a1029;
+}
+
+.about h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 2;
+    color: #d6c8e8;
+}
+
+/* Welcome Section */
+
+.welcome {
+    padding: 80px 15%;
+    text-align: center;
+    background: #100b1c;
+}
+
+.welcome h1 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #c084fc;
+}
+
+.welcome p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #d6c8e8;
+}
+
+/* Footer */
+
+footer {
+    background: #090612;
+    text-align: center;
+    padding: 20px;
+    color: #c084fc;
+    border-top: 1px solid #39205e;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .profile img {
+        width: 230px;
+        height: 260px;
+    }
+}
+```
